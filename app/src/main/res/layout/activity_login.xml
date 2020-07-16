@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <!-- ex) app:layout_constraintStart_toStartOf="parent"：このTextViewの下側をparentの下側と合わせる -->
+    <!-- ex) app:layout_constraintHorizontal_bias="0.50"：左右のマージンの比率を5:5にする -->
+    <!-- ex) app:layout_constraintVertical_bias="0.050"：上下のマージンの比率を0.5:9.5にする -->
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="340dp"
+        android:layout_height="25dp"
+        android:text="@string/loginText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintVertical_bias="0.050"
+    />
+
+    <TextView
+        android:id="@+id/EmailAddressText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/mailAddressText"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        app:layout_constraintHorizontal_bias="0.5"
+    />
+
+    <!-- ems：TextViewの幅を定義 ざっくり書くと1em＝1文字分の幅くらい。layout_widthがwrap_content以外なのでlayout_widthが採用される。 -->
+    <!-- inputType プロパティ：EditText に入力される文字の種類をIMEに入力制限をかけることで限定できる -->
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddressText"
+        app:layout_constraintHorizontal_bias="0.50"
+    />
+
+    <TextView
+        android:id="@+id/PasswordText"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:text="@string/passwordText"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailAddress"
+        app:layout_constraintHorizontal_bias="0.50"
+    />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordText"
+        app:layout_constraintHorizontal_bias="0.50"
+    />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="@string/loginText"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintHorizontal_bias="0.50"
+    />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/signUpText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
