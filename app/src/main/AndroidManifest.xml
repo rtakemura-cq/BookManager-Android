@@ -13,7 +13,8 @@
             android:label="@string/app_signUp"
             android:theme="@style/AppTheme"
         ></activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"
+            android:label="@string/app_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

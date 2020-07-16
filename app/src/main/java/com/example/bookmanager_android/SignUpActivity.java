@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.Window;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -19,8 +21,13 @@ public class SignUpActivity extends AppCompatActivity {
         // AppCompatを使用している場合はgetSupportActionBar()、アプリが実行しているAndroidバージョンに関係なく、常に呼び出す必要がある
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+    }
 
-//        Intent intent = getIntent();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_save, menu);
+        return true;
     }
 
     @Override

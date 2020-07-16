@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- xmlns:app="http://schemas.android.com/apk/res-auto"とapp:showAsAction="always"によってタイトルバーの右上に表示される -->
+    <item android:id="@+id/addButton"
+        android:text="@string/btn_saving"
+        android:title="@string/btn_saving"
+        app:showAsAction="always">
+    </item>
+</menu>
