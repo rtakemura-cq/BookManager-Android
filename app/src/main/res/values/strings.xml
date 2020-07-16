@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">BookManager-Android</string>
-    <string name="loginText">ログイン</string>
-    <string name="mailAddressText">メールアドレス</string>
-    <string name="passwordText">パスワード</string>
-    <string name="signUpText">新規登録</string>
+    <string name="app_login">ログイン</string>
+    <string name="app_signUp">アカウント設定</string>
+    <string name="tv_email">メールアドレス</string>
+    <string name="tv_password">パスワード</string>
+    <string name="tv_password_confirm">パスワード確認</string>
+    <string name="btn_signUp">新規登録</string>
+    <string name="btn_login">ログイン</string>
+    <string name="btn_saving">保存</string>
 </resources>
